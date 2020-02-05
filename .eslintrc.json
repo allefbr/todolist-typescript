@@ -1,0 +1,22 @@
+{
+  "extends": ["airbnb-typescript"],
+  "plugins": ["prettier"],
+
+  "env": {
+    "browser": true
+  },
+
+  "rules": {
+    "react/prop-types": 0,
+    "import/no-unresolved": 0
+  },
+
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+
+  "parser": "@typescript-eslint/parser"
+}

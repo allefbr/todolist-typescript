@@ -1,0 +1,83 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Cyber Punk",
+      "description": "Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "author": "Samantha",
+      "users": [
+        {
+          "id": 1,
+          "name": "Allef",
+          "url": "http://urlqualquer.com.br"
+        }
+      ]
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "content": "Create initial layout for homepage",
+      "projectsId": 1,
+      "status": "Approved",
+      "dateEnd": "2020-01-04"
+    },
+    {
+      "id": 2,
+      "content": "Fixing icons with transparant background",
+      "projectsId": 1,
+      "status": "In Progress",
+      "dateEnd": "2020-01-04"
+    },
+    {
+      "id": 3,
+      "content": "Fixing icons with transparant background",
+      "projectsId": 1,
+      "status": "In Progress",
+      "dateEnd": "2020-01-04"
+    },
+    {
+      "id": 3,
+      "content": "Create initial layout for contact page",
+      "projectsId": 1,
+      "status": "In Progress",
+      "dateEnd": "2020-01-04"
+    },
+    {
+      "id": 4,
+      "content": "Discussions regarding workflow improvement",
+      "projectsId": 1,
+      "status": "In Review",
+      "dateEnd": "2020-01-04"
+    },
+    {
+      "id": 5,
+      "content": "Create quotation for app redesign project",
+      "projectsId": 1,
+      "status": "Waiting",
+      "dateEnd": "2020-01-04"
+    },
+    {
+      "id": 6,
+      "content": "Create initial layout for homepage",
+      "projectsId": 1,
+      "status": "Waiting",
+      "dateEnd": "2020-01-10"
+    },
+    {
+      "id": 7,
+      "content": "Discussions regarding workflow improvement",
+      "projectsId": 1,
+      "status": "Waiting",
+      "dateEnd": "2020-01-10"
+    },
+    {
+      "id": 7,
+      "content": "Fixing icons with transparant background",
+      "projectsId": 1,
+      "status": "Waiting",
+      "dateEnd": "2020-01-10"
+    }
+  ],
+  "profile": { "id": 1, "name": "Samantha" }
+}
