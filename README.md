@@ -1,7 +1,7 @@
-### Todolist-typescript
+# Todolist-typescript
 
-## `npm server`
+### `npm server`
 
-## `npm start`
+### `npm start`
 
-## `npm run build`
+### `npm run build`
