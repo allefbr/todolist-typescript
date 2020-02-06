@@ -1,4 +1,3 @@
-/* eslint-disable arrow-parens */
 import styled, { css } from 'styled-components';
 import colors from '../../styles/colors';
 
@@ -67,7 +66,9 @@ export const Highlight = styled.div`
   color: ${colors.white};
 
   box-shadow: ${(props: HighlightProps) =>
-    !props.active ? `0 0 0 7px ${colors.primary}` : `0 0 0 7px ${colors.primary}, 0 0 0 10px red`};
+    !props.active || !props.variant
+      ? `0 0 0 7px ${colors.primary}`
+      : `0 0 0 7px ${colors.primary}, 0 0 0 10px ${colors[props.variant]}`};
 
   position: relative;
   overflow: hidden;

@@ -1,13 +1,32 @@
 import React from 'react';
+import { ITodos } from 'store/todos/types';
 import TodoItem from '../Item';
 import { Wrapper } from './styles';
 
-const List = () => (
+type Props = {
+  todos: ITodos[];
+  edit: boolean;
+  projectId: number;
+  exclude: boolean;
+  handleChecked: (todo: ITodos) => void;
+};
+
+const List: React.FC<Props> = ({ todos, projectId, edit, exclude, handleChecked }) => (
   <Wrapper>
-    <TodoItem title="Create initial layout for homepage" checked status="approved" />
-    <TodoItem title="Create initial layout for homepage" checked status="approved" />
-    <TodoItem title="Create initial layout for homepage" status="progress" />
-    <TodoItem title="Create initial layout for homepage" status="waiting" />
+    {todos.map((todo: ITodos) => (
+      <TodoItem
+        key={`todos-${todo.id}`}
+        todoId={todo.id}
+        dateEnd={todo.dateEnd}
+        edit={edit}
+        projectId={projectId}
+        exclude={exclude}
+        title={todo.title}
+        checked={todo.checked}
+        status={todo.status}
+        handleChecked={handleChecked}
+      />
+    ))}
   </Wrapper>
 );
 

@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 import colors from 'styles/colors';
-import { DropdownProps } from 'components/Dropdown';
 
 export const Wrapper = styled.div`
   position: relative;
 `;
+
+type DropPropsCSS = {
+  active?: boolean;
+};
 
 export const DropdownList = styled.ul`
   position: absolute;
@@ -16,7 +19,7 @@ export const DropdownList = styled.ul`
   padding: 0;
   margin: 0;
 
-  display: ${(props: DropdownProps) => (props.active ? 'block' : 'none')};
+  display: ${(props: DropPropsCSS) => (props.active ? 'block' : 'none')};
 `;
 
 export const DropdownItem = styled.li`
